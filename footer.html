@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="password">
+    <input type="checkbox" id="changePassword">
+
+
+
+    
+</body>
+<script>
+    document.getElementById('changePassword').addEventListener('click',abc)
+    function abc(){
+        var x=document.getElementById('password')
+        if(x.type === "password"){
+            x.type ="text";
+        }
+        else{
+            x.type ="password";
+        }
+    }
+</script>
+</html>
